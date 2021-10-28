@@ -4,6 +4,7 @@ import Terminator from './terminator.jpg'
 
 function App() {
 
+  // eslint-disable-next-line no-array-constructor
   const month = new Array();
   month[0] = "January";
   month[1] = "February";
