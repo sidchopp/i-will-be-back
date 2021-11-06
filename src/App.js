@@ -1,5 +1,5 @@
 import 'semantic-ui-css/semantic.min.css'
-import { Container, Card, Image, Icon, Divider } from 'semantic-ui-react'
+import { Container, Card, Image, Icon, Divider, Header } from 'semantic-ui-react'
 import Terminator from './terminator.jpg'
 
 function App() {
@@ -23,12 +23,12 @@ function App() {
   let monthName = month[d.getMonth()];
 
   return (
-    <Container text textAlign='center' style={{ marginTop: '50px' }}>
+    <Container text textAlign='center' style={{ marginTop: '30px', paddingBottom: "20px" }}>
+      <Header> 3 billion human lives ended on August 29, 1997. The Survivors of the nuclear holocaust called the war... JUDGMENT DAY.</Header>
       <Card raised fluid centered>
         <Image src={Terminator} wrapped ui={false} />
         <Card.Content>
           <Card.Header>Hasta La Vista...{" "}User</Card.Header>
-
           <Card.Meta>
             <div style={{ marginTop: '15px' }} >
               <Icon name="battery empty" />
@@ -40,7 +40,7 @@ function App() {
           </Card.Meta>
           <Divider />
           <Card.Description>
-            <p>  Actually I am using the free service from Heroku and I have consumed my entire allocation of 550 free dyno hours for
+            <p> I am using the <b>free service</b> from Heroku and I have consumed my entire allocation of 550 free dyno hours for
               <b> {monthName}</b>
               {" "}
               <Icon name="frown"></Icon>
@@ -48,6 +48,7 @@ function App() {
           </Card.Description>
         </Card.Content>
         <Card.Content extra>
+          <Header> Trust Me </Header>
           <b>I WILL BE BACK...</b>
         </Card.Content>
       </Card>
