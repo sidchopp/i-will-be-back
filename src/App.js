@@ -40,7 +40,7 @@ function App() {
           </Card.Meta>
           <Divider />
           <Card.Description>
-            <p> I am using the <b>free service</b> from Heroku and I have consumed my entire allocation of 550 free dyno hours for
+            <p> I am using <b>free service</b> from Heroku and I have consumed my entire allocation of 550 free dyno hours for
               <b> {monthName}</b>
               {" "}
               <Icon name="frown"></Icon>
