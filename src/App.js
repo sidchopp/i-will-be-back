@@ -21,6 +21,7 @@ function App() {
 
   const d = new Date();
   let monthName = month[d.getMonth()];
+  let nextMonthName = month[d.getMonth() + 1];
 
   return (
     <Container text textAlign='center' style={{ marginTop: '30px', paddingBottom: "20px" }}>
@@ -36,7 +37,7 @@ function App() {
             </div>
             <div style={{ margin: '5px' }} >
               <Icon name="battery full" />
-              {" "}My Functional Mode :  Starts at 00:00 hours{" "}{monthName} End </div>
+              {" "}My Functional Mode :  Starts at 00:00 hours, beginning{" "}{nextMonthName}  </div>
           </Card.Meta>
           <Divider />
           <Card.Description>
