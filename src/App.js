@@ -25,7 +25,7 @@ function App() {
 
   return (
     <Container text textAlign='center' style={{ marginTop: '30px', paddingBottom: "20px" }}>
-      {/* <Header as="h3"  > 3 billion human lives ended on August 29, 1997. The Survivors of the nuclear holocaust called the war... JUDGMENT DAY.</Header> */}
+      <Header as="h3"  > 3 billion human lives ended on August 29, 1997. The Survivors of the nuclear holocaust called the war... JUDGMENT DAY.</Header>
       <Card raised fluid centered>
         <Image src={Terminator} wrapped ui={false} />
         <Card.Content>
